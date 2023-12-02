@@ -8,15 +8,34 @@
 </head>
 <body id="main_content">
 
-    <label for="label_text_job_search">Job</label>
-    <input type="text" id="job_search" placeholder="Profession, keywords or company.">
+    <div id="top_bar">
+        <div class="site_name">TalentFusion</div>
+    </div>
 
-    <label for="label_text_place_search">Where</label>
-    <input type="text" id="place_search" placeholder="Now York, Los Angeles">
+    <div id="input_content">
+        <div id="input_container">
+            <div id="first_input">
+                <label for="label_text_job_search" id="label_job">Job</label>
+                <input type="text" id="job_search" placeholder="Profession, keywords or company.">
+            </div>
 
-    <button id="button_search" onclick="displaySearchResult()">SERCH</button>
+            <div id="second_input">
+                <label for="label_text_place_search" id="label_place">Where</label>
+                <input type="text" id="place_search" placeholder="Now York, Los Angeles">
+            </div>
+        </div>
+    </div>
+
+    <div id="btn_search_container">
+        <button id="button_search" class="btn_search" onclick="displaySearchResult()">SERCH</button>
+    </div>
     
-    <ul id="search_result"></ul>
+
+    
+    <div id="list_search_result">
+        <div id="count_search"></div>
+        <ul id="search_result"></ul>
+    </div>
 
     <script src="modulo2_W4_fine_modulo.js"></script>
 </body>

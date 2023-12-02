@@ -167,21 +167,43 @@ function adsJobs (position, place){
 
 function displaySearchResult (){
   
+  //input utente e collegamento funzione ricerca
   let inputJob = document.getElementById("job_search").value;
   let inputPlace = document.getElementById("place_search").value;
   let searchResult = adsJobs(inputJob, inputPlace);
  
-  console.log(searchResult);
-  let listResultDisplay = document.getElementById("search_result");
-
-  // for (let i = 0; i < searchResult.length; i++) {
-  //     let listJobDisplay = document.createElement("li");
-  //     listJobDisplay.appendChild(document.createTextNode(searchResult[i].result));
-  //     // listResultDisplay.appendChild(listJobDisplay);
-  //     console.log(searchResult[i]);
-    
-  // }
+  // console.log(searchResult);
   
+
+  //prendo ul e div da html per collegare i nuovi elementi
+  let listResultDisplay = document.getElementById("search_result");
+  let countResultDisplay = document.getElementById("count_search");
+  
+
+  //resatta le liste prima di mandare una nuova ricerca
+  listResultDisplay.innerHTML = "";
+  countResultDisplay.innerHTML = "";
+
+  // creo un div per il conteggio
+  let newDivCount = document.createElement("div");
+  newDivCount.appendChild(document.createTextNode("Total Searches Found: " + searchResult.count));
+  countResultDisplay.appendChild(newDivCount);
+
+  //creo il ciclo per creare i li, dovre andranno i jobs trovati
+  for (let i = 0; i < searchResult.result.length; i++) {
+      
+      let listJobResult = searchResult.result[i];
+      let newliJob = document.createElement("li");
+
+      newliJob.appendChild(document.createTextNode(listJobResult.title + " - " + listJobResult.location));
+      listResultDisplay.appendChild(newliJob);
+      
+    }
+    
+   
+   
+
+
 
 
 

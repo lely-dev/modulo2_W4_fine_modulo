@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&family=Prata&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+#top_bar{
+    height: 100px;
+    width: auto;
+    background-color: #7B618C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.site_name{
+    color: #CAB4D9;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#input_content{
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input_container{
+    display: flex;
+    color: #4A3259;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#first_input{
+    margin-right: 50px;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+}
+
+#label_job{
+    padding: 0 10px;
+}
+
+#job_search{
+    width: 230px;
+    height: 30px;
+    overflow: hidden;
+    border: none;
+}
+
+
+#second_input{
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+}
+
+#label_place{
+    padding: 0 10px;
+}
+
+#place_search{
+    width: 190px;
+    height: 30px;
+    overflow: hidden;
+    border: none;
+}
+
+
+
+#btn_search_container{
+    display: flex;
+    justify-content: center;
+}
+
+#button_search{
+    background-color: #4A3259;
+    height: 40px;
+    width: 80px;
+    border-radius: 13px;
+    border-style: outset;
+    font-size: 17px;
+    font-weight: 800;
+    color: #CAB4D9;
+}
+
+#list_search_result{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#count_search{
+    font-weight: 600;
+    font-size: 30px;
+    color: #7B618C;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+    color: #4A3259;
+    
+}
+
+li{
+    padding: 10px 0;
+    
+}
+
+li:hover{
+    color: #1f0231;
+    font-weight: 600;
+    cursor: pointer;
+}
